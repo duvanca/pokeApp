@@ -57,12 +57,13 @@ const PokemonCard = ({ url, filterType, pokemonSearch }) => {
                         <div className="types">
                             <h3 className="name_pokemon">{pokemon?.name}</h3>
                             <h4>Tipo</h4>
-                           
+                       <div className="types-container">
                             {pokemon?.types.map(item => 
                             
                             <h4 className="types-pokemon" key={item.type.url}>{item.type.name}</h4>
                             )
                         }
+                        </div>    
                         <span className="span_"></span>
                         </div>
                         <div className="states">
@@ -84,7 +85,7 @@ const PokemonCard = ({ url, filterType, pokemonSearch }) => {
                             <div className="states_second">
                                 <div>
                                     <h5>ATTACK</h5>
-                                    <spa>{pokemon?.stats[1].base_stat}</spa>
+                                    <h3>{pokemon?.stats[1].base_stat}</h3>
                                 </div>
 
                                 <div>

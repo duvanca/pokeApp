@@ -66,24 +66,29 @@ const Pokedex = () => {
   };
 
   return (
-    <div>
+    <div className="container-pokedex">
+     <div className="container-form-title-select">
+
       <h2 className="mesagge-welcome">
         <span className="welcome">Bienvenido {loginuser},</span>aqui podras
         encontrar tu pokemon favorito
       </h2>
 
       <div className="slect-input">
-        <Select options={listTypes} onChange={selectOnchangeTYpes} />
 
-        <form onSubmit={handleSubmit(submit)}>
+        <form className="form-search" onSubmit={handleSubmit(submit)}>
           <input
-            placeholder="Ingresa el nombre del pokemon"
+           className="input-pokemon"
+            placeholder="Name Pokemon!"
             type="text"
             {...register("namepokemon")}
           />
-          <button>search</button>
+          <button className="btn-form-search">search</button>
         </form>
+        <Select options={listTypes} onChange={selectOnchangeTYpes} />
       </div>
+     </div>
+
 
       <div className="container__cards">
         {pokemonSearch === undefined

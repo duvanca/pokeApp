@@ -166,6 +166,9 @@ body {
     padding: 0;
     font-size: 1rem;
     font-family: 'Comic Neue', cursive;
+  background-image: url(../img/backgroundpoke.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
 
 
 }
@@ -430,10 +433,74 @@ body {
     margin: 10px 6px 0 0;
     padding: 2px 2px;
 }
+.types-pokemon {
+   display:inline; 
+}
+.types-container {
+    display: flex;
+    gap: 50px;
+}
 
 
-/* -----------------CSS DAPS JSX-------------------------------- */
-
+/* -----------------CSS input select JSX-------------------------------- */
 .mesagge-welcome{
+    margin: 10px 0 10px 0;
+    font-size: 37px;
+    font-weight: bold;
+    text-align: center;
+    border:1px solid red;
+    color:white;
+}
+.welcome{
+  color:rgb(201, 12, 12);
+  text-align: center;
+ 
+}
+.slect-input{
+ display: flex;
+ 
+padding: 0 30px 0 30px;
+ border:1px solid red;
+ max-width: 990px;
+ margin:auto;
+ align-items: center;
+ justify-content:space-between;
+ width: 100%;
+}
+.form-search{
+display: flex;
+gap: 10px;
+}
+.btn-form-search{
+ background-color:transparent;
+ color: rgb(255, 255, 255);
+ border: 1px solid white;
+ border-radius:7px;
+ padding:7px 14px;
+}
+.container-form{
+
+}
+.input-pokemon{
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius:7px;
+    width:300px;
     
+}
+::placeholder { color: rgb(255, 255, 255); }
+.title-select{
+   
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+.container-pokedex{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
 }
