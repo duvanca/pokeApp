@@ -25,6 +25,7 @@ const PokemonCard = ({ url, filterType, pokemonSearch }) => {
         navigate(`/pokedex/${pokemon?.id}`);
         dispatch(setPokemonGlobal(pokemon));
     };
+    console.log(pokemon)
 
 
     return (
@@ -49,7 +50,7 @@ const PokemonCard = ({ url, filterType, pokemonSearch }) => {
             } >
                 <img
                     className="card_img"
-                    src={pokemon?.sprites.other['official-artwork'].front_default}
+                    src={pokemon?.sprites.other['home'].front_default}
                     alt={pokemon?.name}
                 />
                 <div className="card_info">

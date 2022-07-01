@@ -13,7 +13,7 @@ function App() {
     
     <>
    
-    <Header/>
+    
       <Routes>
       <Route path="/" element={<LoginApp />} />
        

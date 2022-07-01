@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import PokemonCard from "./PokemonCard";
 import { useForm } from "react-hook-form";
 import Select from "react-select";
+import Header from "./Header";
 
 const Pokedex = () => {
   const [pokemons, setPokemons] = useState();
@@ -40,7 +41,7 @@ const Pokedex = () => {
   }, []);
 
   useEffect(() => {
-    const URL = `https://pokeapi.co/api/v2/pokemon/?offset=0&limit=7/`;
+    const URL = `https://pokeapi.co/api/v2/pokemon/?offset=0&limit=80/`;
 
     axios
       .get(URL)
@@ -66,12 +67,14 @@ const Pokedex = () => {
   };
 
   return (
+    
+    <>
+    <Header/>
     <div className="container-pokedex">
      <div className="container-form-title-select">
 
       <h2 className="mesagge-welcome">
-        <span className="welcome">Bienvenido {loginuser},</span>aqui podras
-        encontrar tu pokemon favorito
+        <span className="welcome">Welcome  {loginuser} !,</span>here you can find your favorite pokemon.
       </h2>
 
       <div className="slect-input">
@@ -109,6 +112,7 @@ const Pokedex = () => {
             ))}
       </div>
     </div>
+    </>
   );
 };
 
