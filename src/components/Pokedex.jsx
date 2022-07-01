@@ -85,7 +85,7 @@ const Pokedex = () => {
           />
           <button className="btn-form-search">search</button>
         </form>
-        <Select options={listTypes} onChange={selectOnchangeTYpes} />
+        <Select  options={listTypes} onChange={selectOnchangeTYpes} />
       </div>
      </div>
 

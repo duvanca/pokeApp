@@ -4,15 +4,16 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Pokedex from "./components/Pokedex";
 import PokeInfoId from "./components/PokeInfoId";
 import ProtectedRoutes from "./components/ProctedRoutes";
+import Header from "./components/Header";
 
 
 function App() {
   return (
-    <div className="App">
-
-      <header className="App__header">
-
-      </header>
+    
+    
+    <>
+   
+    <Header/>
       <Routes>
       <Route path="/" element={<LoginApp />} />
        
@@ -24,7 +25,8 @@ function App() {
           <Route path="/Pokedex" element={<Pokedex />} />
         </Route>
       </Routes>
-    </div>
+      </>
+   
   );
 }
 
