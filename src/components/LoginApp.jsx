@@ -39,6 +39,7 @@ const LoginApp = () => {
           <h1 className="title-login"> Hello Coach !</h1>
           <span className="span-text">I need your name to continue...</span>
           <div className="input-btn">
+         
           <input
           className="input-login"
             placeholder="Ingresa tu nombre de entrenador"

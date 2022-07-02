@@ -7,6 +7,10 @@
     cursor: pointer;
 }
 
+.name-nums-fire {
+    color: rgb(255, 123, 0);
+}
+
 .card-pokemon-grass {
     background-image: linear-gradient(rgb(17, 155, 12), rgb(255, 255, 255));
     /* padding:10px 10px 10px 10px; */
@@ -15,131 +19,266 @@
     cursor: pointer;
 }
 
+.name-nums-grass {
+    color: rgb(17, 155, 12);
+}
+
 
 .card-pokemon-water {
     background-image: linear-gradient(rgb(17, 209, 216), rgb(255, 255, 255));
-   
-   
+
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(16, 179, 219);
     cursor: pointer;
 }
 
+.name-nums-water {
+    color: rgb(17, 209, 216);
+}
+
 .card-pokemon-flying {
-    background-color: rgb(122, 177, 194);
+
+    background-image: linear-gradient(rgb(112, 179, 182), rgb(255, 255, 255));
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(89, 117, 139);
     cursor: pointer;
 }
 
+.name-nums-flying {
+    color: rgb(112, 179, 182);
+}
+
 .card-pokemon-electric {
     background-image: linear-gradient(rgb(251, 255, 0), rgb(255, 255, 255));
-    
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(198, 219, 6);
     cursor: pointer;
 }
 
+.name-nums-electric {
+    color: rgb(255, 230, 0);
+}
+
+
 .card-pokemon-fairy {
-    background-color: rgb(248, 50, 215);
+
+    background-image: linear-gradient(rgb(248, 34, 230), rgb(255, 255, 255));
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(189, 29, 167);
     cursor: pointer;
 }
 
+.name-nums-fairy {
+    color: rgb(248, 34, 230);
+}
+
 .card-pokemon-normal {
-    background-color: rgb(119, 66, 218);
+
+    background-image: linear-gradient(rgb(119, 57, 138), rgb(255, 255, 255));
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(94, 54, 117);
     cursor: pointer;
 }
 
+.name-nums-normal {
+    color: rgb(128, 69, 123);
+}
+
 .card-pokemon-rock {
-    background-color: rgb(128, 82, 39);
+
+    background-image: linear-gradient(rgb(128, 82, 39), rgb(255, 255, 255));
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(59, 50, 28);
     cursor: pointer;
+
 }
 
-.card-pokemon-normal {
+.name-nums-rock {
+    color: rgb(59, 50, 28);
+}
+
+.card-pokemon-shadow {
     background-image: linear-gradient(rgb(224, 93, 53), rgb(255, 255, 255));
-    
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
-    border: 2px solid rgb(255, 0, 0);
+    border: 2px solid rgb(220, 97, 53);
     cursor: pointer;
 }
 
+.name-nums-shadow {
+    color: rgb(220, 97, 53);
+}
+
+
 .card-pokemon-ground {
     background-color: rgb(114, 100, 75);
+    background-image: linear-gradient(rgb(114, 100, 75), rgb(255, 255, 255));
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(90, 78, 53);
     cursor: pointer;
 }
 
+.name-nums-ground {
+    color: rgb(90, 78, 53);
+}
+
+.card-pokemon-unknown {
+
+    background-image: linear-gradient(rgb(114, 100, 75), rgb(255, 255, 255));
+
+    /* padding:10px 10px 10px 10px; */
+    border-radius: 14px;
+    border: 8px solid #10043d;
+    cursor: pointer;
+}
+
+.name-nums-unknown {
+    color: #10043d;
+}
+
 .card-pokemon-bug {
     background-image: linear-gradient(rgb(115, 228, 10), rgb(255, 255, 255));
-    
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(122, 228, 22);
     cursor: pointer;
 }
 
+.name-nums-bug {
+    color: rgb(14, 167, 14);
+}
+
 .card-pokemon-dark {
-    background-color: rgb(20, 20, 20);
+
+    background-image: linear-gradient(rgb(20, 20, 20), rgb(255, 255, 255));
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(0, 0, 0);
     cursor: pointer;
 }
 
+.name-nums-dark {
+    color: rgb(0, 0, 0);
+}
+
 .card-pokemon-ghost {
-    background-color: rgb(61, 61, 48);
+
+    background-image: linear-gradient(rgb(61, 61, 48), rgb(255, 255, 255));
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(44, 38, 38);
     cursor: pointer;
 }
 
+.name-nums-ghost {
+    color: rgb(44, 38, 38);
+}
+
 .card-pokemon-dragon {
-    background-color: rgb(255, 65, 7);
+
+    background-image: linear-gradient(rgb(255, 65, 7), rgb(255, 255, 255));
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(136, 41, 3);
     cursor: pointer;
 }
 
+.name-nums-dragon {
+    color: rgb(255, 65, 7), ;
+}
+
 .card-pokemon-steel {
-    background-color: rgb(201, 201, 193);
+
+    background-image: linear-gradient(rgb(201, 201, 193), rgb(255, 255, 255));
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(128, 126, 126);
     cursor: pointer;
 }
 
+.name-nums-steel {
+    color: rgb(128, 126, 126);
+}
+
 .card-pokemon-ice {
-    background-color: rgb(138, 240, 235);
+
+    background-image: linear-gradient(rgb(138, 240, 235), rgb(255, 255, 255));
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(78, 199, 199);
     cursor: pointer;
 }
 
+.name-nums-ice {
+    color: rgb(32, 108, 151);
+}
+
+
+.card-pokemon-poison {
+
+    background-image: linear-gradient(rgb(180, 93, 12), rgb(255, 255, 255));
+
+    /* padding:10px 10px 10px 10px; */
+    border-radius: 14px;
+    border: 8px solid rgb(230, 114, 6);
+    cursor: pointer;
+}
+
+.name-nums-poison {
+    color: rgb(180, 93, 12);
+}
+
+.card-pokemon-fighting {
+
+    background-image: linear-gradient(rgb(212, 10, 10), rgb(255, 255, 255));
+
+    /* padding:10px 10px 10px 10px; */
+    border-radius: 14px;
+    border: 8px solid rgb(112, 9, 9);
+    cursor: pointer;
+}
+
+.name-nums-fighting {
+    color: rgb(211, 16, 16);
+}
+
+
+
 .card-pokemon-psychic {
-    background-color: rgb(28, 10, 46);
+
+    background-image: linear-gradient(rgb(28, 10, 46), rgb(255, 255, 255));
+
     /* padding:10px 10px 10px 10px; */
     border-radius: 14px;
     border: 8px solid rgb(17, 5, 32);
     cursor: pointer;
 }
+
+.name-nums-psychic {
+    color: rgb(17, 5, 32);
+}
+
 
 
 html {
@@ -172,30 +311,40 @@ body {
     padding: 0;
     font-size: 1rem;
     font-family: 'Comic Neue', cursive;
-    background-image: url(./img/backgroundpoke.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/backgroundpoke.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+   
+
+
+
 
 
 }
+
+.App {}
 
 .card_img {
     width: 300px;
     height: 300x;
     position: relative;
-    top: 70px;
+    top: 20px;
+    z-index: 10;
 }
 
 .container__cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
 }
 
 .span_ {
-    background-color: rgb(26, 25, 25);
+    background-color: rgb(104, 101, 101);
     width: 100%;
-    height: 2px;
+    height: 1px;
+    margin: 14px;
 }
 
 .states {
@@ -211,13 +360,14 @@ body {
     flex-direction: column;
     align-items: center;
 
+
 }
 
 .type {
-   
+
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 17px;
     border-radius: 10px;
 }
 
@@ -253,6 +403,9 @@ body {
 
 .name-pokemon {
     font-family: 'Comic Neue', cursive;
+    text-align: center;
+    margin: 0 10px;
+    max-width:300px;
 }
 
 .card-id-pokemon {
@@ -260,7 +413,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    
+    flex-wrap: wrap;
 
 
 }
@@ -275,18 +429,8 @@ body {
     padding:20px 20px;
 } */
 .name-id {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
-    box-shadow: 1px 1px 6px 1px rgb(145, 142, 142);
-    border: 1px solid rgb(219, 203, 203);
-    text-align: center;
 }
 
-.height-weight {
-    display: flex;
-}
 
 .type-abilty {
     display: flex;
@@ -295,7 +439,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-
+    padding:0 10px;
 }
 
 .id {
@@ -344,6 +488,8 @@ body {
 .height-weight {
     display: flex;
     gap: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 .weight {
@@ -376,8 +522,7 @@ body {
 .card_img-id {
     width: 200px;
     height: 200px;
-    position: relative;
-    bottom: 24px;
+   margin-left:50px;
 }
 
 .container-card {
@@ -385,6 +530,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
@@ -404,9 +550,19 @@ body {
 
 }
 
-.movements {
+.container-movements{
     box-shadow: 1px 1px 6px 1px rgb(158, 152, 152);
     border: 1px solid rgb(219, 203, 203);
+    border-radius: 4px;
+    text-align: center;
+    
+}
+.container-movements h2{
+    font-size:30px;
+}
+
+.movements {
+   
     display: flex;
     flex-wrap: wrap;
     max-width: 900px;
@@ -456,18 +612,18 @@ body {
     font-size: 37px;
     font-weight: bold;
     text-align: center;
-    
+
     color: white;
-    margin-top:40px;
+    margin-top: 40px;
     -webkit-text-stroke: 1px black;
 
 }
 
 .welcome {
-    
-    font-Size:43px;
+
+    font-Size: 43px;
     font-weight: bold;
-    color:#D43F25;
+    color: #db381b;
     -webkit-text-stroke: 1px black;
 }
 
@@ -475,7 +631,7 @@ body {
     display: flex;
 
     padding: 0 30px 0 30px;
-   
+
     max-width: 990px;
     margin: auto;
     align-items: center;
@@ -494,9 +650,11 @@ body {
     border: 1px solid white;
     border-radius: 7px;
     padding: 7px 14px;
+    font-weight: bold;
+
 }
 
-.container-form {}
+
 
 .Select {
     background: transparent;
@@ -508,11 +666,12 @@ body {
     border: 1px solid white;
     border-radius: 7px;
     width: 300px;
+    font-weight: bold;
 
 }
 
 ::placeholder {
-    color: rgb(141, 104, 104);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -536,202 +695,315 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-top: 60px;
 }
 
 
-.css-b62m3t-container {
-    background-color: rgba(255, 255, 255, 0.116);
-
-}
-
-.css-b62m3t-container {
-    background-color: rgba(241, 241, 241, 0.123);
-}
 
 
-.css-1f43avz-a11yText-A11yText {
-    background-color: rgba(255, 255, 255, 0.192);
 
-}
 
-.css-1s2u09g-control {
-    background-color: rgba(255, 255, 255, 0.027);
 
-}
 
-.css-1kwwvb1-ValueContainer2 {
-    background-color: rgba(255, 255, 255, 0.007);
-    width: 240px;
-    border-radius: 10px;
 
-}
 
-.css-14el2xx-placeholder {
-    background-color: rgba(226, 226, 226, 0.137);
-    color: aliceblue;
-
-}
-
-.css-1f43avz-a11yText-A11yText {
-    background-color: rgba(255, 255, 255, 0);
-    color: #fff;
-
-}
-
-.css-tj5bde-Svg {
-    background-color: rgba(255, 255, 255, 0.096);
-}
-
-.css-1okebmr-indicatorSeparator {
-    background-color: #ffffff0e;
-}
-
-.css-tlfecz-indicatorContainer {
-    background-color: rgba(255, 255, 255, 0.062);
-    cursor: pointer;
-}
-
-.select-css {
-    background-color: rgba(255, 255, 255, 0.185);
-}
-
-.css-4xgw5l-IndicatorsContainer2 {
-    background-color: rgba(255, 255, 255, 0.096);
-}
-
-/* css-4xgw5l-IndicatorsContainer2
-css-1okebmr-indicatorSeparator
-class=" css-tlfecz-indicatorContainer
-css-1f43avz-a11yText-A11yText */
 .ash-img {
     width: 300px;
     height: 500px;
-   
+
 
 }
 
 
 /* ----------CSS HEADER ---------- */
 .background {
-    background-color: #c72c21;
-   height:80px;
-   display:flex;
-   flex-direction:column;
-   
+    background-color: #db381b;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 12;
+
 }
 
 .barra {
     background-color: black;
-    width:100%;
-    height:50px;
-    display:inline-block;
-   
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+
 }
 
 .circle {
     border: 5px solid rgb(0, 0, 0);
-   top:19px;
+    top: 19px;
     width: 60px;
     height: 60px;
     display: flex;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     position: absolute;
-    background:white;
+    background: white;
     left: 80%;
-   
-    
-    
+
+
+
 
 }
 
 .circle-small {
     border: 3px solid rgb(0, 0, 0);
-    display:inline-block;
+    display: inline-block;
     width: 30px;
     height: 30px;
-    background:rgb(31, 30, 30);
-   
+    background: rgb(31, 30, 30);
+
     border-radius: 50%;
-    
+
 }
-.container-imglogin{
+
+.container-imglogin {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 90px;
-   padding:30px;
-    box-shadow: 1px 1px 6px 1px rgb(158, 152, 152);
-   margin-left:auto;
-   margin-right: auto;
-   flex-wrap: wrap;
-    
-    
+    margin-top:50px ;
+    padding: 30px;
+   
+
+    flex-wrap: wrap;
+
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+
+
+
 }
-.form-login{
+
+.form-login {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:25px;
+    gap: 25px;
+    margin: auto;
+    padding: 20px 20px;
 }
-.logo-pokedex{
+
+.logo-pokedex {
     height: 83px;
     width: 400px;
-    
+
 }
-.title-login{
-    font-Size:43px;
+
+.title-login {
+    font-Size: 50px;
     font-weight: bold;
-    color:#D43F25;
+    color: #D43F25;
     -webkit-text-stroke: 1px black;
 }
-.span-text{
- font-weight: bold;
- font-size:24px;
- margin:0;
- color:rgb(0, 0, 0);
 
-
-    
-}
-.input-login{
-    background-color:rgba(255, 255, 255, 0.753);
-    text-align:center;
-   border:none;
-   border-radius: 4px;
-    width: 300px;
-    height:40px;
-    cursor:pointer;
-    
-}
-.btn-login{
-    background-color:#D43F25;
-    border:none;
+.span-text {
     font-weight: bold;
-    cursor:pointer;
-    border-radius: 4px;
+    font-size: 30px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px black;
+
+
 
 }
 
-.loginapp{
-    display:flex;
+.input-login {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid white;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+
+}
+
+.btn-login {
+    background-color: #db381b;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    color: white;
+
+}
+
+.loginapp {
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-  
-}
-    
-.input-btn{
-    display: flex;
-    gap:1px;
+   
+
+
+
 }
 
-.logo-pokedex-header{
-    width:240px;
+.input-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.logo-pokedex-header {
+    width: 240px;
     height: 65px;
-  margin-left:150px ;
-  margin-top:10px;
+    margin: auto;
+}
+
+.form-select {
+    background-color: transparent;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 7px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-options {
+    background: #d43f25e7;
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+
+
+
+
+.pagination-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.pagination-number-container {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.pagination-prev-next {
+    font-size: 40px;
+    color:#db381b;
+    cursor: pointer;
+     font-weight: bold;
+     -webkit-text-stroke: .8px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.pagination-prev-next:hover{
+ color: white;
+ 
+
+}
+
+.page-number {
+    font-size: 33px;
+    color: #db381b;
+    cursor: pointer;
+    width: 40px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight:bold ;
+    -webkit-text-stroke: .8px black;
+}
+
+.page-number:hover {
+    background-color: #db381b;
+    color:white;
+}
+
+
+  .page-active{
+    background-color: #db381b;
+    color: white;
+  }
+
+  footer{
+    bottom:0;
+  }
+
+@media (max-width: 462px) {
+    .page-number {
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        width: 40px;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .pagination-number-container {
+        display: flex;
+        gap: 1px;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .pagination-container {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: max-content;
+        margin: 0 auto;
+    }
+}
+
+.container {
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 686px) {
+    .slect-input {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 30px 0 30px;
+
+        max-width: 990px;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 471px) {
+    .input-btn {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }

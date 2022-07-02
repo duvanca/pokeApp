@@ -11,9 +11,10 @@ function App() {
   return (
     
     
-    <>
-   
     
+    
+    <div className="App">
+
       <Routes>
       <Route path="/" element={<LoginApp />} />
        
@@ -25,8 +26,9 @@ function App() {
           <Route path="/Pokedex" element={<Pokedex />} />
         </Route>
       </Routes>
-      </>
+     
    
+   </div>
   );
 }
 
