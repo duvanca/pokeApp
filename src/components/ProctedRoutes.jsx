@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 const ProtectedRoutes = () => {
     const login = useSelector((state) => state.loginuser);
- console.log(login)
+
 	
     if(login) {
         return <Outlet />

@@ -34,7 +34,7 @@ const Pokedex = () => {
       axios
         .get(URL)
         .then((res) => {
-          console.log(res.data.pokemon);
+        
           const array = res.data.pokemon.map((e) => e.pokemon);
           setPokemons(array);
         })
@@ -54,15 +54,14 @@ const Pokedex = () => {
 
       .catch((err) => console.log(err));
   }, []);
-  console.log(type)
+ 
 
   
   
   
   useEffect(() => {
     setFilterPokemon(
-      pokemons?.filter((e) => e.name.includes(pokemonSearch.toLowerCase()))
-    );
+      pokemons?.filter((e) => e.name.includes(pokemonSearch.toLowerCase())));
   }, [pokemonSearch]);
 
 
@@ -70,15 +69,17 @@ const Pokedex = () => {
   const changeSelect = e => {
     setFilterType(e.target.value)
   }
+  console.log(filterType)
   const changeInputText = e => {
     setPokemonSearch(e.target.value)
   }
-  console.log(pokemons)
+  console.log(pokemonSearch)
 
   //  PAGINACION POKEDEX--------------------------->
+  
   const [currentPage, setCurrentPage] = useState(1)
-
-  let arrayPokemons = []
+ 
+  let arrayPokemons=[]
   const pokemonsPerPage = 9
   if (pokemons?.length < pokemonsPerPage) {
     arrayPokemons = [...pokemons]
@@ -89,22 +90,25 @@ const Pokedex = () => {
   }
   console.log(arrayPokemons)
   let arrayPages = []
-  let quantityPages = Math.ceil(pokemons?.length / pokemonsPerPage) // 11 = cantidad paginas máximas
+  let quantityPages = Math.ceil(pokemons?.length / pokemonsPerPage) 
   const pagesPerBlock = 5
-  let currentBlock = Math.ceil(currentPage / pagesPerBlock) // 2 = segundo bloque
-  // Analiza si estamos en el último(true) o no(false)
+  let currentBlock = Math.ceil(currentPage / pagesPerBlock) 
+ 
   if (currentBlock * pagesPerBlock >= quantityPages) {
-    // Cuando es el último bloque
+   
     for (let i = currentBlock * pagesPerBlock - pagesPerBlock + 1; i <= quantityPages; i++) {
       arrayPages.push(i)
     }
   } else {
-    // cuando no es el último bloque
+    
     for (let i = currentBlock * pagesPerBlock - pagesPerBlock + 1; i <= currentBlock * pagesPerBlock; i++) {
       arrayPages.push(i)
     }
   }
+
+
   
+
 
   return (
     <>
@@ -131,8 +135,8 @@ const Pokedex = () => {
             <select class="form-select" onChange={changeSelect}>
               <option class="form-options" value="All Pokemons">All Pokemons</option>
               {type?.map((item) => (
-                <option class="form-options" key={item.name} value={item.name}>
-                  {item.name}
+                <option class="form-options" key={item?.name} value={item?.name}>
+                  {item?.name}
                 </option>
               ))}
             </select>
@@ -147,7 +151,7 @@ const Pokedex = () => {
 
         <div className="container__cards">
           {filterPokemon 
-            ? filterPokemon?.map((pokemon) => (
+            ?filterPokemon?.map((pokemon) => (
                 <PokemonCard
                   key={pokemon?.url}
                   url={pokemon?.url}
@@ -155,7 +159,7 @@ const Pokedex = () => {
                   type={type}
                 />
               ))
-            : arrayPokemons?.map((item) => (
+            :   arrayPokemons?.map((item) => (
                 <PokemonCard
                   key={item.url}
                   url={item.url}
@@ -166,23 +170,24 @@ const Pokedex = () => {
               ))}
        
        
-    <footer>
+        </div>
 
+
+      
+      </div>
         <Pginations
          arrayPages={arrayPages}
          currentPage={currentPage}
          setCurrentPage={setCurrentPage}
          quantityPages={quantityPages}
         />
+    
 
-    </footer>
-        </div>
-
-
-      
-      </div>
+  
 
 
+
+  
       
     </>
   );

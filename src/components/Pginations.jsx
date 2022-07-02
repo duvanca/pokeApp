@@ -1,8 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import  { useRef, } from 'react'
 
+
 const Pginations = ({arrayPages, currentPage, setCurrentPage, quantityPages}) => {
-    const listNumber = useRef()
+  // {arrayPages, currentPage, setCurrentPage, quantityPages}
+
+ 
+ 
+ 
+ 
+
+
+
+
+  
+
+
+
+
+
+  
+  const listNumber = useRef()
 
     const prevPage = () => {
       if(currentPage - 1 === 0) {

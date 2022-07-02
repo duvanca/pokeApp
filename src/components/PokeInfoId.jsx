@@ -13,6 +13,8 @@ const PokeInfoId = () => {
   // }
 
   // console.log(element);
+  let tore = pokemonfirst?.abilities
+   
 
   return (
     <div className="container-card">
@@ -60,8 +62,16 @@ const PokeInfoId = () => {
             <div className="ability">
               <h2 className = {`name-nums-${pokemonfirst?.types[0].type.name}`}>Ability</h2>
               <div className="abilitys">
-                <h5 className="first-ability">{pokemonfirst?.abilities[0].ability.name}</h5>
-                <h5 className="second-ability">{pokemonfirst?.abilities[1].ability.name}</h5>
+                {    
+                    pokemonfirst?.abilities.map(item =>
+                      
+                      <h5 className="first-ability"key={item?.ability.url}>{item?.ability.name}</h5>
+                      )
+
+                }
+
+                
+                
               </div>
             </div>
           </div>

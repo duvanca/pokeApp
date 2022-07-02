@@ -4,29 +4,41 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setPokemonGlobal } from "../store/slices/pokemonid.slice";
+import { setUrlPokemon } from "../store/slices/urlpokemos.slice";
 
 const PokemonCard = ({ url,pokemonSearch,type }) => {
     const [pokemon, setPokemon] = useState();
 
 
-    const [pokemonType, setPokemonType] = useState();
-    console.log(pokemonSearch)
+   
+   
     useEffect(() => {
         axios
             .get(url)
             .then((res) => setPokemon(res.data))
              .catch((err) => console.log(err));
     }, []);
+        
+    if(pokemon){
+
+        const dispoke = useDispatch();
+           dispoke(setUrlPokemon(pokemon))
+    }
+    
+
+   
 
 
     const navigate = useNavigate();
     const dispatch = useDispatch();
-
+    
     const clickCard = () => {
         navigate(`/pokedex/${pokemon?.id}`);
         dispatch(setPokemonGlobal(pokemon));
     };
-    console.log(pokemon)
+    
+   console.log(pokemon)
+ 
    
    
 
@@ -87,6 +99,7 @@ const PokemonCard = ({ url,pokemonSearch,type }) => {
                     </div>
                 </div>
             </article>
+           
         </div>
     );
 };

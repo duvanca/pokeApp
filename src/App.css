@@ -17,7 +17,12 @@
     border-radius: 14px;
     border: 8px solid rgb(40, 138, 10);
     cursor: pointer;
+    box-shadow: 3px 5px 5px 3px rgba(7, 7, 7, 0.8);
+    
 }
+
+
+
 
 .name-nums-grass {
     color: rgb(17, 155, 12);
@@ -62,7 +67,7 @@
 }
 
 .name-nums-electric {
-    color: rgb(255, 230, 0);
+    color: rgb(233, 229, 27);
 }
 
 
@@ -338,6 +343,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .span_ {
@@ -376,11 +383,7 @@ body {
     font-family: 'Comic Neue', cursive;
 }
 
-.container__cards {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-}
+
 
 .states_second {
     display: flex;
@@ -449,6 +452,8 @@ body {
 .abilitys {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    flex-direction:column;
 }
 
 .first-ability {
@@ -651,7 +656,16 @@ body {
     border-radius: 7px;
     padding: 7px 14px;
     font-weight: bold;
+    background:linear-gradient(to right, transparent 50%, #db381b 50%) no-repeat left / 200%;
+    transition: background-position 0.3s ease; 
+    cursor:pointer;
 
+}
+.btn-form-search:hover{
+    background-position: right; 
+    color:white; 
+    /* border: 2px solid rgb(237, 230, 23);
+    } */
 }
 
 
@@ -667,6 +681,7 @@ body {
     border-radius: 7px;
     width: 300px;
     font-weight: bold;
+    cursor:pointer;
 
 }
 
@@ -689,6 +704,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid red;
+    
 }
 
 .container-form-title-select {
@@ -825,22 +844,33 @@ body {
     width: 300px;
     height: 40px;
     cursor: pointer;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     font-weight: bold;
     color: rgb(0, 0, 0);
 
 }
 
 .btn-login {
-    background-color: #db381b;
+   
+  
+    /* background-color: #db381b; */
     border: none;
     font-weight: bold;
     cursor: pointer;
     border-radius: 4px;
-    border: 1px solid #ffffff;
-    color: white;
+    border: 2px solid;
+    color:#db381b;
+    background:linear-gradient(to right, transparent 50%, #db381b 50%) no-repeat left / 200%;
+    transition: background-position 0.3s ease; 
 
 }
+
+.btn-login:hover{
+    background-position: right; 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #ffffff;
+    }
+
 
 .loginapp {
     display: flex;
@@ -873,10 +903,19 @@ body {
     height: 30px;
     text-align: center;
     font-weight: bold;
+    cursor:pointer;
+    background:linear-gradient(to right, transparent 50%, #db381b 50%) no-repeat left / 200%;
+    transition: background-position 0.3s ease;
 }
 
+.form-select:hover{
+    background-position: right; 
+    color: rgb(255, 255, 255); 
+  
+    }
+
 .form-options {
-    background: #d43f25e7;
+    background: #000000e7;
     display: flex;
     gap: 20px;
     font-weight: bold;
@@ -1007,3 +1046,5 @@ body {
         justify-content: center;
     }
 }
+
+

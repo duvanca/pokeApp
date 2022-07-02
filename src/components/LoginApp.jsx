@@ -21,7 +21,7 @@ const LoginApp = () => {
         nameUser: "",
       });
       navigate("/Pokedex");
-      console.log(data);
+     
     }
   };
 
