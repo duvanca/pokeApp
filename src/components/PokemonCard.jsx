@@ -43,7 +43,7 @@ const PokemonCard = ({ url,pokemonSearch,type }) => {
    
 
     return (
-        <div>
+        
             <article onClick={clickCard} className ={`card-pokemon-${pokemon?.types[0].type.name}`}>
                 <img
                     className="card_img"
@@ -100,7 +100,7 @@ const PokemonCard = ({ url,pokemonSearch,type }) => {
                 </div>
             </article>
            
-        </div>
+        
     );
 };
 

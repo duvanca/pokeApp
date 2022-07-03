@@ -26,7 +26,9 @@ const LoginApp = () => {
   };
 
   return (
-    <article className="loginapp">
+    <div className="cont_log">
+
+
       <div className="container-imglogin">
         <img
           className="ash-img"
@@ -36,7 +38,7 @@ const LoginApp = () => {
 
         <form className="form-login" onSubmit={handleSubmit(submit)}>
           <img className="logo-pokedex" src={logo} alt="pokedex" />
-          <h1 className="title-login"> Hello Coach !</h1>
+          <h1 className="title-login"> Hello Coach!</h1>
           <span className="span-text">I need your name to continue...</span>
           <div className="input-btn">
          
@@ -51,7 +53,8 @@ const LoginApp = () => {
           </div>
         </form>
       </div>
-    </article>
+    </div>
+    
   );
 };
 

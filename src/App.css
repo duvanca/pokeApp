@@ -18,6 +18,7 @@
     border: 8px solid rgb(40, 138, 10);
     cursor: pointer;
     box-shadow: 3px 5px 5px 3px rgba(7, 7, 7, 0.8);
+    min-width:280px;
     
 }
 
@@ -329,7 +330,7 @@ body {
 
 }
 
-.App {}
+
 
 .card_img {
     width: 300px;
@@ -647,6 +648,7 @@ body {
 .form-search {
     display: flex;
     gap: 10px;
+   
 }
 
 .btn-form-search {
@@ -706,8 +708,7 @@ body {
     gap: 50px;
     justify-content: center;
     align-items: center;
-    border:1px solid red;
-    
+   
 }
 
 .container-form-title-select {
@@ -787,15 +788,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top:50px ;
-    padding: 30px;
+  
+  
    
 
     flex-wrap: wrap;
 
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-
+ 
 
 
 }
@@ -806,8 +806,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 25px;
-    margin: auto;
-    padding: 20px 20px;
+   
+   
 }
 
 .logo-pokedex {
@@ -836,17 +836,17 @@ body {
 
 .input-login {
 
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+     background:transparent;
 
     text-align: center;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     width: 300px;
     height: 40px;
     cursor: pointer;
     border: 1px solid #ffffff;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 
 }
 
@@ -857,10 +857,10 @@ body {
     border: none;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 15px;
     border: 2px solid;
-    color:#db381b;
-    background:linear-gradient(to right, transparent 50%, #db381b 50%) no-repeat left / 200%;
+    color:#ffffff;
+    background:linear-gradient(to right, transparent 50%,  #db381b 50%) no-repeat left / 200%;
     transition: background-position 0.3s ease; 
 
 }
@@ -876,6 +876,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
    
 
 
@@ -1014,6 +1015,18 @@ body {
         width: max-content;
         margin: 0 auto;
     }
+    .pagination-prev-next {
+        font-size: 25px;
+        color:#db381b;
+        cursor: pointer;
+         font-weight: bold;
+         -webkit-text-stroke: .8px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
 }
 
 .container {
@@ -1038,13 +1051,115 @@ body {
 }
 
 @media (max-width: 471px) {
-    .input-btn {
+  
+    .btn-form-search {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        border: 1px solid white;
+        border-radius: 7px;
+        padding: 7px 19px;
+        font-weight: bold;
+        background:linear-gradient(to right, transparent 50%, #db381b 50%) no-repeat left / 200%;
+        transition: background-position 0.3s ease; 
+        cursor:pointer;
+    
+    }
+    .btn-form-search:hover{
+        background-position: right; 
+        color:white; 
+        /* border: 2px solid rgb(237, 230, 23);
+        } */
+    }
+    
+    
+    
+    .Select {
+        background: transparent;
+    }
+    
+    .input-pokemon {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        border: 1px solid white;
+        border-radius: 7px;
+        width: 250px;
+        height:30px;
+        font-weight: bold;
+        cursor:pointer;
+    
+    }
+}
+@media (max-width: 471px) {
+    .form-search {
         display: flex;
         gap: 10px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+       
     }
+    .input-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .input-login {
+
+        background:transparent;
+   
+       text-align: center;
+       border: none;
+       border-radius: 15px;
+       width: 250px;
+       height: 40px;
+       cursor: pointer;
+       border: 1px solid #ffffff;
+       font-weight: bold;
+       color: rgb(255, 255, 255);
+   
+   }
+   
+   .btn-login {
+      height:40px;
+      width:100px;
+     
+       /* background-color: #db381b; */
+       border: none;
+       font-weight: bold;
+       cursor: pointer;
+       border-radius: 15px;
+       border: 2px solid;
+       color:#ffffff;
+       background:linear-gradient(to right, transparent 50%,  #db381b 50%) no-repeat left / 200%;
+       transition: background-position 0.3s ease; 
+   
+   }
+   
+ 
 }
 
 
+.cont_log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+
+@media (max-width: 370px){
+
+    .logo-pokedex {
+        height:60 px;
+        width: 300px;
+    
+    }
+    .ash-img {
+        width: 200px;
+        height: 400px;
+    
+    
+    }
+
+}
